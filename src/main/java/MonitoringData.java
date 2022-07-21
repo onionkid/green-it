@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.logging.Logger;
 
 public class MonitoringData {
-    static final Logger logger = Logger.getLogger(GreenMonitor.class.getName());
+    private static final Logger logger = Logger.getLogger(GreenMonitor.class.getName());
 
     public static final String LOCATION = "location";
     public static final String UPTIME = "uptime";
@@ -92,5 +92,10 @@ public class MonitoringData {
     public String getJSONPayload()
     {
         return this.payload.toJSONString();
+    }
+
+    public JSONObject getJSONObject()
+    {
+        return this.payload;
     }
 }
