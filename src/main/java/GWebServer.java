@@ -49,7 +49,7 @@ public class GWebServer {
 
             //x-api-key
             if(test)
-                request.addHeader("x-api-key","PMAK-62d9509a2c2d0912aca658c6-99e1a4498a7edd79a73e9d4306ff0b9d46");
+                request.addHeader("x-api-key","");
 
             request.setEntity(params);
             CloseableHttpResponse response = httpClient.execute(request);
